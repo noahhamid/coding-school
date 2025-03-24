@@ -1,12 +1,17 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Code } from "lucide-react"
-import { ThemeToggle } from "@/components/theme-toggle"
-import { SiteFooter } from "@/components/site-footer"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import Link from "next/link";
+import { Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Code } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { SiteFooter } from "@/components/site-footer";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function PricingPage() {
   return (
@@ -38,10 +43,16 @@ export default function PricingPage() {
                   </svg>
                 </button>
                 <div className="absolute left-0 top-full z-10 mt-2 hidden w-56 rounded-md border bg-background p-2 shadow-md group-hover:block">
-                  <Link href="/courses/web-development" className="block rounded-md px-4 py-2 text-sm hover:bg-muted">
+                  <Link
+                    href="/courses/web-development"
+                    className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
+                  >
                     Web Development
                   </Link>
-                  <Link href="/courses/data-science" className="block rounded-md px-4 py-2 text-sm hover:bg-muted">
+                  <Link
+                    href="/courses/data-science"
+                    className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
+                  >
                     Data Science
                   </Link>
                   <Link
@@ -50,10 +61,16 @@ export default function PricingPage() {
                   >
                     Mobile Development
                   </Link>
-                  <Link href="/courses/machine-learning" className="block rounded-md px-4 py-2 text-sm hover:bg-muted">
+                  <Link
+                    href="/courses/machine-learning"
+                    className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
+                  >
                     Machine Learning
                   </Link>
-                  <Link href="/courses/devops" className="block rounded-md px-4 py-2 text-sm hover:bg-muted">
+                  <Link
+                    href="/courses/devops"
+                    className="block rounded-md px-4 py-2 text-sm hover:bg-muted"
+                  >
                     DevOps
                   </Link>
                 </div>
@@ -96,9 +113,12 @@ export default function PricingPage() {
           <div className="container">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Simple, transparent pricing</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Simple, transparent pricing
+                </h1>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Choose the plan that's right for you and start your coding journey today.
+                  Choose the plan that&apos;s right for you and start your
+                  coding journey today.
                 </p>
               </div>
               <div className="flex flex-col gap-4 md:flex-row">
@@ -110,7 +130,9 @@ export default function PricingPage() {
               <div className="rounded-lg border bg-background p-6 shadow-sm">
                 <div className="mb-4">
                   <h3 className="text-2xl font-bold">Basic</h3>
-                  <p className="text-muted-foreground">For individuals just getting started</p>
+                  <p className="text-muted-foreground">
+                    For individuals just getting started
+                  </p>
                 </div>
                 <div className="mb-4">
                   <span className="text-4xl font-bold">$19</span>
@@ -144,7 +166,9 @@ export default function PricingPage() {
                 </div>
                 <div className="mb-4">
                   <h3 className="text-2xl font-bold">Pro</h3>
-                  <p className="text-muted-foreground">For serious learners and professionals</p>
+                  <p className="text-muted-foreground">
+                    For serious learners and professionals
+                  </p>
                 </div>
                 <div className="mb-4">
                   <span className="text-4xl font-bold">$49</span>
@@ -179,7 +203,9 @@ export default function PricingPage() {
               <div className="rounded-lg border bg-background p-6 shadow-sm">
                 <div className="mb-4">
                   <h3 className="text-2xl font-bold">Enterprise</h3>
-                  <p className="text-muted-foreground">For teams and organizations</p>
+                  <p className="text-muted-foreground">
+                    For teams and organizations
+                  </p>
                 </div>
                 <div className="mb-4">
                   <span className="text-4xl font-bold">$199</span>
@@ -213,31 +239,38 @@ export default function PricingPage() {
               </div>
             </div>
             <div className="mx-auto max-w-3xl rounded-lg border bg-muted p-8">
-              <h3 className="mb-4 text-xl font-bold">Frequently Asked Questions</h3>
+              <h3 className="mb-4 text-xl font-bold">
+                Frequently Asked Questions
+              </h3>
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>Can I switch plans later?</AccordionTrigger>
                   <AccordionContent>
-                    Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next
-                    billing cycle.
+                    Yes, you can upgrade or downgrade your plan at any time.
+                    Changes will be reflected in your next billing cycle.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger>Is there a free trial?</AccordionTrigger>
                   <AccordionContent>
-                    We offer a 7-day free trial for all plans. No credit card required to start.
+                    We offer a 7-day free trial for all plans. No credit card
+                    required to start.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                   <AccordionTrigger>Do you offer refunds?</AccordionTrigger>
                   <AccordionContent>
-                    We offer a 30-day money-back guarantee if you're not satisfied with our service.
+                    We offer a 30-day money-back guarantee if you&apos;re not
+                    satisfied with our service.
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-4">
-                  <AccordionTrigger>What payment methods do you accept?</AccordionTrigger>
+                  <AccordionTrigger>
+                    What payment methods do you accept?
+                  </AccordionTrigger>
                   <AccordionContent>
-                    We accept all major credit cards, PayPal, and bank transfers for Enterprise plans.
+                    We accept all major credit cards, PayPal, and bank transfers
+                    for Enterprise plans.
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -248,9 +281,12 @@ export default function PricingPage() {
           <div className="container">
             <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Still have questions?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                  Still have questions?
+                </h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed">
-                  Our team is here to help. Contact us for more information about our plans and services.
+                  Our team is here to help. Contact us for more information
+                  about our plans and services.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end">
@@ -267,6 +303,5 @@ export default function PricingPage() {
       </main>
       <SiteFooter />
     </div>
-  )
+  );
 }
-

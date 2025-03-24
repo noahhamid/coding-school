@@ -769,9 +769,9 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="mt-4 text-muted-foreground">
-                  "I had no coding experience when I started. Now I'm working as
+                  I had no coding experience when I started. Now I&apos;m working as
                   a web developer at my dream company. The interactive lessons
-                  and project-based learning made all the difference."
+                  and project-based learning made all the difference.
                 </p>
               </div>
               <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -791,9 +791,9 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="mt-4 text-muted-foreground">
-                  "The curriculum is well-structured and the community support
+                  The curriculum is well-structured and the community support
                   is amazing. I was able to transition from a non-technical role
-                  to a software engineer in just 6 months."
+                  to a software engineer in just 6 months.
                 </p>
               </div>
               <div className="rounded-lg border bg-background p-6 shadow-sm">
@@ -813,9 +813,9 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="mt-4 text-muted-foreground">
-                  "As a freelancer, I needed to expand my skill set quickly. The
+                  As a freelancer, I needed to expand my skill set quickly. The
                   courses here allowed me to learn new technologies and
-                  immediately apply them to client projects."
+                  immediately apply them to client projects.
                 </p>
               </div>
             </div>

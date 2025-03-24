@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState } from "react"
 import { Code, Search, BookOpen, Code2, Globe, Laptop, Server, Database, Smartphone, Cpu } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -307,7 +308,7 @@ export default function CoursesPage() {
                         filteredCourses.map((course) => (
                           <Card key={course.id} className="overflow-hidden">
                             <div className="aspect-video w-full overflow-hidden">
-                              <img
+                              <Image
                                 src={course.image || "/placeholder.svg"}
                                 alt={course.title}
                                 className="h-full w-full object-cover transition-all hover:scale-105"
@@ -352,7 +353,7 @@ export default function CoursesPage() {
                       {/* Popular courses would be shown here */}
                       <Card className="overflow-hidden">
                         <div className="aspect-video w-full overflow-hidden">
-                          <img
+                          <Image
                             src="/placeholder.svg?height=150&width=250"
                             alt="JavaScript Fundamentals"
                             className="h-full w-full object-cover transition-all hover:scale-105"
@@ -390,7 +391,7 @@ export default function CoursesPage() {
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                       <Card className="overflow-hidden">
                         <div className="aspect-video w-full overflow-hidden">
-                          <img
+                          <Image
                             src="/placeholder.svg?height=150&width=250"
                             alt="Machine Learning Fundamentals"
                             className="h-full w-full object-cover transition-all hover:scale-105"
@@ -428,7 +429,7 @@ export default function CoursesPage() {
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                       <Card className="overflow-hidden">
                         <div className="aspect-video w-full overflow-hidden">
-                          <img
+                          <Image
                             src="/placeholder.svg?height=150&width=250"
                             alt="HTML & CSS Basics"
                             className="h-full w-full object-cover transition-all hover:scale-105"
